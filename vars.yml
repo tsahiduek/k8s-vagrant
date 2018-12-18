@@ -1,0 +1,4 @@
+---
+kubeadm_token: "ryj4kr.yj4x9ssortaksa3o"
+k8s_master_ip: "172.16.1.100"
+# k8s_master_ip: "192.168.1.100"

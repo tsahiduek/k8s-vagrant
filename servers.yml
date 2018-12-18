@@ -1,0 +1,20 @@
+- hostname: master
+  box: ubuntu/xenial64
+  ip_address: 172.16.1.100
+  # box_version:      "1811.01"
+  cpus: 2
+  ram: 1024
+  playbook: k8s-master.yml
+- hostname: node-1
+  box: ubuntu/xenial64
+  ip_address: 172.16.1.110
+  cpus: 1
+  ram: 1024
+  playbook: k8s-minion.yml
+- hostname: node-2
+  box: ubuntu/xenial64
+  ip_address: 172.16.1.111
+  cpus: 1
+  ram: 1024
+  playbook: k8s-minion.yml
+  port_forwarding:
